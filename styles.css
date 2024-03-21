@@ -1,0 +1,96 @@
+:root {
+  /* colors */
+  --light-dark-color: #34313d;
+  --dark-violet-color: #3a3054;
+  --light-violet-color: #4b3f6b;
+  --grey-light-color: #9e9aa8;
+  --light-gray-color: #eff1f7;
+  --light-green-color: #2bd0d0;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* global styles for all components */
+a {
+  text-decoration: none;
+  color: var(--grey-light-color);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+.btn {
+  background-color: var(--light-green-color);
+  color: var(--light-gray-color);
+  border-radius: 28px;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+.nav-item {
+  color: var(--grey-light-color);
+  font-weight: bold;
+}
+.nav-item:hover {
+  color: var(--dark-violet-color);
+}
+/* header and nav container styling */
+.nav-container {
+  /* padding: 48px 167px; */
+  margin-top: 48px;
+}
+.nav-container .nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: var(--light-dark-color);
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.nav-items {
+  margin-left: 45px;
+}
+.nav-items a {
+  margin-right: 29px;
+  font-weight: bold;
+}
+
+.nav-items a:last-child {
+  margin-right: 0;
+}
+
+.nav-right.btns {
+  display: flex;
+  align-items: center;
+}
+.nav-right.btns a[href="#login"] {
+  margin-right: 37px;
+}
